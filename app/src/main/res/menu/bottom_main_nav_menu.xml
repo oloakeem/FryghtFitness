@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+    android:id="@+id/nav_favorites"
+    android:icon="@drawable/ic_pie_chart_black_24dp"
+    android:title="Nutrition/Diet" />
+    <item
+        android:id="@+id/nav_gen"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="Training" />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Caloric Cal" />
+
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Status"
+            android:icon="@drawable/ic_stars_black_24dp"
+            android:title="Status" />
+        <item
+            android:id="@+id/nav_Favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favorites" />
+        <item
+            android:id="@+id/nav_Exercise"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Exercise Lib" />
+        <item
+            android:id="@+id/nav_Theme"
+            android:icon="@drawable/ic_color_lens_black_24dp"
+            android:title="Theme" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

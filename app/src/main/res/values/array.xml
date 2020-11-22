@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="random_imgs">
+        <item>@drawable/home_item_grad1_background</item>
+        <item>@drawable/home_item_grad2_background</item>
+        <item>@drawable/home_item_grad3_background</item>
+        <item>@drawable/home_item_grad4_background</item>
+
+    </integer-array>
+
+</resources>

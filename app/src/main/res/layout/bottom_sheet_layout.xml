@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheetround"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/empty"
+        android:textColor="#5F5F5F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="25sp" />
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/empty"
+        android:background="#7C888888"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <FrameLayout
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/empty"
+        android:id="@+id/animeFrame_New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.razerdp.widget.animatedpieview.AnimatedPieView
+            android:id="@+id/anime_New"
+            android:layout_width="275dp"
+            android:layout_height="275dp">
+
+        </com.razerdp.widget.animatedpieview.AnimatedPieView>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginLeft="25dp"
+        android:id="@+id/protienR_New"
+        android:layout_toRightOf="@id/animeFrame_New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty"
+        android:layout_marginTop="175dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/myProteinText"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein"
+                android:textColor="#a31b0f"
+                android:textSize="14sp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/myProteinText"
+                android:textColor="#a31b0f"
+                android:id="@+id/protien_New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/animeFrame_New"
+        android:layout_below="@id/empty"
+        android:layout_marginTop="75dp"
+        android:id="@+id/carbsR_New"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#0cccf2"
+                android:id="@+id/myCarbs"
+                android:text="Carbohydrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:textColor="#0cccf2"
+                android:layout_below="@id/myCarbs"
+                android:id="@+id/carbs_New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fatsR_New"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/animeFrame_New"
+        android:layout_below="@id/empty"
+        android:layout_marginTop="125dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Fats"
+                android:textColor="#2a8a1d"
+                android:id="@+id/myFatsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:textColor="#2a8a1d"
+                android:layout_below="@id/myFatsText"
+                android:id="@+id/fats_New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/animeFrame_New"
+        android:background="#7C888888"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <Spinner
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/animeFrame_New"
+        android:id="@+id/myTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/animeFrame_New"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/myTotalText"
+        android:id="@+id/resultsBmr_New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blank"
+        android:textColor="#000000"></TextView>
+
+
+   <Button
+       android:layout_marginLeft="25dp"
+       android:layout_marginTop="-35dp"
+       android:padding="5dp"
+       android:textColor="@color/appBaseColor"
+       android:layout_toRightOf="@id/animeFrame_New"
+       android:layout_below="@id/animeFrame_New"
+       android:text="Modify"
+       android:background="@drawable/cc_buttons"
+       android:id="@+id/customMacros"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"></Button>
+
+    <TextView
+android:layout_below="@id/myTotalText"
+        android:id="@+id/tdee"
+        android:layout_marginTop="25dp"
+        android:text="Explanation of calories in vs calories out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

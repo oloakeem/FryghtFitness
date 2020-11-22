@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBaseColor"
+    tools:context=".ExerciseGenerator">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/appBaseColor"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/lightRed"
+            android:id="@+id/nutritionH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Exercises "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF" />
+            <ImageView
+                android:visibility="invisible"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_info_outline_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+        </RelativeLayout>
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#8D8D8D"
+            android:textStyle="bold"
+            android:text="Weight lifting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+<ScrollView
+android:layout_marginTop="10dp"
+    android:layout_weight="10"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+
+    >
+
+        <GridLayout
+            android:background="@color/appBaseColor"
+            android:id="@+id/mainGrid"
+            android:columnCount="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:id="@+id/EXC1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="5dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/sample"
+                            android:src="@drawable/push_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></ImageView>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"
+                        android:text="Push Day"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rightbackground_fader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </View>
+
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/EXC2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="5dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/sample2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ImageView>
+
+
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Pull Day"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:background="@drawable/rightbackground_fader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </View>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/EXC3"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="5dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leg_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="DuplicateIds"></ImageView>
+
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Leg Day"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:background="@drawable/rightbackground_fader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </View>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/EXC4"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="5dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/core_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ImageView>
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_lock_black_24dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"></ImageView>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Core/Abs"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:background="@drawable/rightbackground_fader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </View>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+</ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ExeGen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/cardview_default_elevation"
+    android:id="@+id/exerciseItem"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+android:background="@color/appBaseColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<View
+    android:background="#C8030303"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/exerciseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/exerciseSR"
+                android:layout_marginLeft="25dp"
+                android:text="Exercise"
+                android:textColor="@color/lightRed"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:id="@+id/exerciseSR"
+                android:text="Reps and Sets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/exerciseSR"
+                android:layout_marginLeft="35dp"
+                android:textColor="#C7B946"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/rest"
+                android:text="60s rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

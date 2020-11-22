@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    tools:context=".DisplayExercise"
+    android:background="@color/appBaseColor"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_weight="2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/exercise_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/exerTab"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"/>
+        </RelativeLayout>
+
+</FrameLayout>
+</androidx.cardview.widget.CardView>
+    <FrameLayout
+        android:layout_weight="1.4"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/exegener"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="20dp"
+            android:id="@+id/ExerciseDisplayView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+
+</LinearLayout>

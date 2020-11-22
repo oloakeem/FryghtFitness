@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:id="@+id/Header"
+        android:background="@color/lightRed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="center">
+        <TextView
+            android:textColor="@color/appBaseColor"
+            android:layout_centerVertical="true"
+            android:text="Your total calories"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/totalCalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+
+
+    <FrameLayout
+       android:id="@+id/proFrame"
+       android:layout_marginLeft="25dp"
+       android:layout_below="@+id/Header"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/p"
+               android:text="Protein"
+               android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_below="@id/p"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/proteinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+<NumberPicker
+
+    android:layout_marginTop="15dp"
+    android:layout_below="@id/proteinTextView"
+    android:id="@+id/proteinNumberPicker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+</NumberPicker>
+       </RelativeLayout>
+</FrameLayout>
+    <FrameLayout
+        android:id="@+id/carbFrame"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/c"
+                android:text="Carbs"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:layout_below="@id/c"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/carbTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <NumberPicker
+                android:layout_marginTop="15dp"
+
+                android:layout_below="@+id/carbTextView"
+                android:id="@+id/carbsNumberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </NumberPicker>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/f"
+                android:text="Fats"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_below="@id/f"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/fatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <NumberPicker
+                android:layout_marginTop="15dp"
+
+                android:layout_below="@+id/fatTextView"
+                android:id="@+id/fatNumberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </NumberPicker>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/textPercent"
+            android:text="Percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <Button
+            android:text="Submit"
+            android:textColor="@color/appBaseColor"
+            android:background="@drawable/cc_buttons"
+            android:onClick="checkPercentage"
+            android:layout_toRightOf="@id/textPercent"
+            android:id="@+id/buttonPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

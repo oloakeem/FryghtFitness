@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="popup_width">350dp</dimen>
+    <dimen name="popup_height">375dp</dimen>
+    <dimen name="mobile_popup_width">375dp</dimen>
+    <dimen name="mobile_popup_height">400dp</dimen>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <View
+                android:layout_above="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/imageview_faderbottom"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_below="@id/image"
+                android:id="@+id/title"
+                android:textColor="@color/lightRed"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="Brochure"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:lines="2"
+                android:textColor="@color/pureBlack"
+                android:id="@+id/desc"
+                android:layout_below="@id/title"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="3"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_lock_black_24dp"
+                android:layout_margin="25dp"
+                android:id="@+id/locked"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

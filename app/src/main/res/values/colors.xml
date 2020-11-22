@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 4th Gradient color -->
+    <color name="colorGrey_900">#2B2B2B</color>
+    <!-- 5th Gradient color -->
+
+    <!-- 6th Gradient color -->
+    <!-- Colors for Video card view -->
+    <color name="color1">#921C63</color>
+    <color name="color2">#170C44</color>
+    <color name="color3">#659997</color>
+    <color name="color4">#E0CB12</color>
+    <color name="myellow">#C7B946</color>
+    <color name="myRed">#D81717</color>
+    <color name="myBlue">#3FC00D</color>
+
+    <color name="defaultGrey">#F1F1F1</color>
+    <color name="headerRed">#C90F0F</color>
+    <color name="pureBlack">#E9000000</color>
+<color name="headBlack">#E4000000</color>
+    <color name="greyTint">#68888888</color>
+    <color name="lightRed">#FF4141</color>
+    <color name="lightBlue">#46CAFF</color>
+    <color name="appBaseColor">#F1F1F1</color>
+
+</resources>

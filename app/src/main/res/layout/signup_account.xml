@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:padding="20dp"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/SILogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+    </ImageView>
+    <TextView
+        android:layout_below="@id/SILogo"
+        android:id="@+id/SIHeader"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register Below!"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:layout_above="@id/SIPass"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Email"
+        android:id="@+id/SIUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:layout_above="@id/SIxPass"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Password"
+        android:id="@+id/SIPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:layout_marginBottom="150dp"
+        android:layout_above="@id/SIConfirm"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Confirm Password"
+        android:id="@+id/SIxPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+
+    <Button
+        android:textColor="@color/appBaseColor"
+        android:background="@drawable/cc_buttons"
+        android:id="@+id/SIConfirm"
+        android:text="Create Account"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+</RelativeLayout>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBaseColor"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <ScrollView
+        android:id="@+id/scrollViewNutr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paragraph"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#8D8D8D"
+                android:textSize="14sp"
+               />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txttypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="Types of diets"
+                android:textColor="#8D8D8D"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ScrollView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:id="@+id/NGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:columnCount="1"
+                        android:orientation="vertical"
+                        android:rowCount="4">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV1"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+                                                <ImageView
+
+                                                    android:scaleType="fitXY"
+                                                    android:id="@+id/mytesting"
+                                                    android:src="@drawable/iffym_image"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"></ImageView>
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="IIFYM"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"></Button>
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV2"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/keto_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Keto"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV3"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/vegan_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Vegan"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV4"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/vegeterian_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Vegetarian"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV5"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/lowcarb_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Low Carb"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV6"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/paleo_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Paleo"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV7"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/glutten_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Gluten Free"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CV8"
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bordered_gray">
+                                <ImageView
+
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/nosugar_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"></ImageView>
+
+                                <Button
+                                    android:background="@drawable/lightred_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="No Sugar"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></Button>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginBottom="13dp"
+                                    android:text="5-10 min read"
+                                    android:textColor="#FFFFFF"></TextView>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+                </ScrollView>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/testerone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
