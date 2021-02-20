@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "132462075929",
+    "firebase_url": "https://myone-c3268.firebaseio.com",
+    "project_id": "myone-c3268",
+    "storage_bucket": "myone-c3268.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132462075929:android:c9cd1ec446e2300b654a88",
+        "android_client_info": {
+          "package_name": "come.example.myone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132462075929-qcktb027psgfilj9dci4srm9u7qcgh7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "come.example.myone",
+            "certificate_hash": "0302c4ae28b17272e069f42165c27fb19e26d730"
+          }
+        },
+        {
+          "client_id": "132462075929-nuj95fh192k492i4mqdcviuh611qgj9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-MlJUGnHdlsjEmmmN_-NQg_JBEXqO3WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132462075929-nuj95fh192k492i4mqdcviuh611qgj9e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
