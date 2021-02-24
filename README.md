@@ -6,4 +6,4 @@
 ![myONESS](https://user-images.githubusercontent.com/74876042/108971420-4a3e7300-7650-11eb-91bb-056c9ce45067.jpg)
 
 ## Status
-- Incomplete 
+- Complete 
